@@ -23,3 +23,20 @@ Run the assistant:
 ```
 $ python3 assistant.py
 ```
+
+ ## Troubleshooting
+
+### Apple Silicon
+
+If you are using an Apple Silicon device and notice that the video screen is black, you may need to change the index of the `VideoCapture` function.
+
+Change:
+```python
+VideoCapture(index=0)
+```
+
+to 
+
+```python
+VideoCapture(index=1)
+```
